@@ -1,3 +1,5 @@
+package library;
+
 class Admin extends User {
 
     public Admin(String name, Integer userID) {
@@ -6,6 +8,6 @@ class Admin extends User {
 
     @Override
     public String toString() {
-        return "Admin{} " + super.toString();
+        return "library.Admin{} " + super.toString();
     }
 }

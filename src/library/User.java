@@ -1,3 +1,5 @@
+package library;
+
 class User {
     private String name;
     private Integer userID;
@@ -25,7 +27,7 @@ class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "library.User{" +
                 "name='" + name + '\'' +
                 ", userID=" + userID +
                 '}';

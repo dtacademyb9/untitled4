@@ -1,3 +1,5 @@
+package library;
+
 class Member extends User {
     public Member(String name, Integer userID) {
         super(name, userID);
@@ -8,6 +10,6 @@ class Member extends User {
 
     @Override
     public String toString() {
-        return "Member{} " + super.toString();
+        return "library.Member{} " + super.toString();
     }
 }

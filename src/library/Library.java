@@ -1,5 +1,6 @@
+package library;
+
 import java.util.ArrayList;
-import java.util.List;
 
 class Library implements LibraryOperations {
    private ArrayList<Book> books = new ArrayList<>();
@@ -30,9 +31,9 @@ class Library implements LibraryOperations {
                 bookToBorrow.setBorrowed(true);
                 System.out.println(user.getName() + " borrowed the book: " + bookToBorrow.getTitle());
             } else if (bookToBorrow == null) {
-                System.out.println("Book with ISBN " + ISBN + " not found.");
+                System.out.println("library.Book with ISBN " + ISBN + " not found.");
             } else {
-                System.out.println("Book with ISBN " + ISBN + " is already borrowed.");
+                System.out.println("library.Book with ISBN " + ISBN + " is already borrowed.");
             }
         } else {
             System.out.println("Borrowing operation failed. Either user not found or user is not a member.");
@@ -48,9 +49,9 @@ class Library implements LibraryOperations {
                 bookToReturn.setBorrowed(false);
                 System.out.println(user.getName() + " returned the book: " + bookToReturn.getTitle());
             } else if (bookToReturn == null) {
-                System.out.println("Book with ISBN " + ISBN + " not found.");
+                System.out.println("library.Book with ISBN " + ISBN + " not found.");
             } else {
-                System.out.println("Book with ISBN " + ISBN + " was not borrowed.");
+                System.out.println("library.Book with ISBN " + ISBN + " was not borrowed.");
             }
         } else {
             System.out.println("Returning operation failed. Either user not found or user is not a member.");

@@ -1,10 +1,11 @@
-import java.util.ArrayList;
+package library;
+
 import java.util.List;
 
 class Report {
     public void generateReport(List<Book> books) {
         StringBuilder report = new StringBuilder();
-        report.append("Library Report\n");
+        report.append("library.Library library.Report\n");
         report.append("==============\n");
 
         for (Book book : books) {

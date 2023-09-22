@@ -1,3 +1,5 @@
+package library;
+
 class Book {
     private String title;
     private String author;
@@ -45,6 +47,6 @@ class Book {
 
     @Override
     public String toString() {
-        return "Book [title=" + title + ", author=" + author + ", ISBN=" + ISBN + ", borrowed=" + borrowed + "]";
+        return "library.Book [title=" + title + ", author=" + author + ", ISBN=" + ISBN + ", borrowed=" + borrowed + "]";
     }
 }
