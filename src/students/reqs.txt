@@ -1,0 +1,39 @@
+Student Record Manager:
+Create a Java program that manages student records by implementing OOP principles, utilizing List, Comparator, handling exceptions, and performing File Read/Write operations.
+
+Task Description:
+
+Create a Student class with the following attributes:
+
+    id (String)
+    name (String)
+    age (int)
+    gpa (double)
+    Include appropriate constructor(s), getters, and setters. Override the toString() method to display student details.
+
+Create a StudentManager class:
+
+    Create a List<Student> to hold student records.
+    Implement the following methods:
+        addStudent(Student student): Adds a student to the list.
+        removeStudent(String id): Removes a student by ID.
+        getStudent(String id): Returns a student by ID.
+        sortStudentsByGPA(): Sorts the students by GPA. Use Comparator.
+        readStudentsFromFile(String filename): Reads student records from a file and adds them to the list. Handle any IO exceptions appropriately and consider edge cases.
+        writeStudentsToFile(String filename): Writes the current student records to a file. Handle any IO exceptions appropriately.
+
+Exception Handling:
+
+    Handle any potential exceptions such as FileNotFoundException, IOException, NumberFormatException, etc. Display a user-friendly message for exception cases.
+    File Format: Decide on a simple file format to store student records, such as CSV (Comma Separated Values): id,name,age,gpa
+
+Create a Main class:
+
+    Instantiate the StudentManager.
+    Provide a user interface to perform operations like adding, removing, viewing, sorting students, and reading/writing to/from files.
+    Execute and test the different functionalities, handling exceptions appropriately.
+
+Bonus:
+    Implement a search functionality to find students by name.
+    Allow the user to sort students by age as well.
+    Enhance the program by allowing the user to update existing student records.
